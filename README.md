@@ -79,6 +79,12 @@ docker run --rm \
 ```
 <br>
 
+### Create .env file
+```
+cp .env.example.sail .env
+```
+<br>
+
 ### Start services
 ```
 ./vendor/bin/sail up -d
