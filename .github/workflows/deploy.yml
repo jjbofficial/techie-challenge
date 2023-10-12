@@ -48,8 +48,9 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
+            set -e
             cd ${{ secrets.PATH }}
-            git pull origin develop
+            git pull origin master
             /usr/bin/php8.1 /usr/local/bin/composer install
             /usr/bin/php8.1 artisan migrate --force
             /usr/bin/php8.1 artisan config:cache
