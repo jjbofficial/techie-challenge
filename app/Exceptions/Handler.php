@@ -29,7 +29,7 @@ class Handler extends ExceptionHandler
         });
 
         $this->renderable(function (NotFoundHttpException $e, $request) {
-            if($request->is('api/*')) {
+            if($request->is('api/v1*')) {
                 return response()->json([
                     'message' => 'Resource not found'
                 ]);
