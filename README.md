@@ -111,6 +111,7 @@ To view the full api documentation, visit `http://localhost:82/docs/api` or `htt
 | /api/v1/register| POST| Create an account| No|
 | /api/v1/login| POST|Login| No|
 | /api/v1/posts| GET| View all posts| Yes|
+| /api/v1/posts| POST| Create a post| Yes|
 | /api/v1/post/{post}| GET| View a single post| Yes|
 | /api/v1/post/{post}| PUT| Edit a post| Yes|
 | /api/v1/post/{post}| DELETE|Delete a post| Yes|
