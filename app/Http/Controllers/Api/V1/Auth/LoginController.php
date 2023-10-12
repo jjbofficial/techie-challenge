@@ -3,15 +3,30 @@
 namespace App\Http\Controllers\Api\V1\Auth;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\Api\V1\LoginRequest;
+use App\Http\Resources\Api\V1\UserResource;
+use Illuminate\Support\Str;
 
+/**
+ * @tags Auth
+ */
 class LoginController extends Controller
 {
     /**
-     * Handle the incoming request.
+     * @unauthenticated
+     *
+     * Login
      */
-    public function __invoke(Request $request)
+    public function __invoke(LoginRequest $request)
     {
-        //
+        $user = $request->authenticatedUser;
+
+        $token = $user->createToken(Str::random(10))
+            ->plainTextToken;
+
+        return response()->json([
+            ...(new UserResource($user))->toArray($request),
+            'token' => $token
+        ]);
     }
 }

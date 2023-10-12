@@ -31,13 +31,13 @@ class PostController extends Controller
     {
         $user = auth()->user();
 
-        $user->posts()->create([
+        $user->posts()->create(
             $request->safe()
                 ->merge([
                     'slug' => str($request->title)->slug()
                 ])
                 ->toArray()
-        ]);
+        );
 
         return response(status: Response::HTTP_CREATED);
     }
@@ -60,15 +60,15 @@ class PostController extends Controller
      */
     public function update(UpdatePostRequest $request, Post $post)
     {
-        $post->update([
+        $post->update(
             $request->safe()
                 ->merge([
                     'slug' => str($request->title)->slug()
                 ])
                 ->toArray()
-        ]);
+        );
 
-        return response(status:Response::HTTP_OK);
+        return response(status: Response::HTTP_OK);
     }
 
     /**
@@ -80,6 +80,6 @@ class PostController extends Controller
 
         $post->delete();
 
-        return response(status:Response::HTTP_OK);
+        return response(status: Response::HTTP_OK);
     }
 }
