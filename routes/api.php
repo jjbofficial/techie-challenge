@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::prefix('v1')->post('register', RegisterController::class);
-Route::prefix('v1')->post('login', LoginController::class);
+Route::post('v1/register', RegisterController::class);
+Route::post('v1/login', LoginController::class);
 
 
 Route::prefix('v1')
