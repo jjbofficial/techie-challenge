@@ -10,12 +10,12 @@
 
 ### Clone the repo
 ```
-gh repo clone jjbofficial/techie-challenge
+gh repo clone jjbofficial/techie-challenge && cd techie-challenge
 ```
 or
 
 ```
-git clone git@github.com:jjbofficial/techie-challenge.git
+git clone git@github.com:jjbofficial/techie-challenge.git && cd techie-challenge
 ```
 <br>
 
@@ -59,12 +59,12 @@ Note: This requires that you have docker installed
 
 ### Clone the repo
 ```
-gh repo clone jjbofficial/techie-challenge
+gh repo clone jjbofficial/techie-challenge && cd techie-challenge
 ```
 or
 
 ```
-git clone git@github.com:jjbofficial/techie-challenge.git
+git clone git@github.com:jjbofficial/techie-challenge.git && cd techie-challenge
 ```
 <br>
 
@@ -104,7 +104,7 @@ cp .env.example.sail .env
 <br>
 
 ## Testing the API
-To view the full api documentation, visit `http://localhost:82/docs/api` or `http://locahost:8000/docs/api` depending on whether you used sail or composer for your local set-up. 
+To view the full api documentation, visit `http://localhost:82/docs/api` or `http://localhost:8000/docs/api` depending on whether you used sail or composer for your local set-up. 
 
 |Endpoint |Method|Description |Requires Auth |
 |---------|-------|-----|--------------|
