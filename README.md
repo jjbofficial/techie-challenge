@@ -104,7 +104,7 @@ cp .env.example.sail .env
 <br>
 
 ## Testing the API
-To view the full api documentation, visit `http://localhost:82/api/docs` or `http://locahost:8000/api/ocs` depending on whether you used sail or composer for your local set-up. 
+To view the full api documentation, visit `http://localhost:82/api/docs` or `http://locahost:8000/api/docs` depending on whether you used sail or composer for your local set-up. 
 
 |Endpoint |Method|Description |Requires Auth |
 |---------|-------|-----|--------------|
