@@ -10,12 +10,12 @@
 
 ### Clone the repo
 ```
-gh repo clone anaanse/anaanse-api
+gh repo clone jjbofficial/techie-challenge
 ```
 or
 
 ```
-git clone git@github.com:anaanse/anaanse-api
+git clone git@github.com:jjbofficial/techie-challenge.git
 ```
 <br>
 
@@ -59,12 +59,12 @@ Note: This requires that you have docker installed
 
 ### Clone the repo
 ```
-gh repo clone anaanse/anaanse-api
+gh repo clone jjbofficial/techie-challenge
 ```
 or
 
 ```
-git clone git@github.com:anaanse/anaanse-api
+git clone git@github.com:jjbofficial/techie-challenge.git
 ```
 <br>
 
@@ -98,7 +98,7 @@ docker run --rm \
 <br>
 
 ## Testing the API
-To view the full api documentation, visit `http://localhost:82/docs` or `http://locahost:8000/docs` depending on whether you used sail or composer for your local set-up. 
+To view the full api documentation, visit `http://localhost:82/api/docs` or `http://locahost:8000/api/ocs` depending on whether you used sail or composer for your local set-up. 
 
 |Endpoint |Method|Description |Requires Auth |
 |---------|-------|-----|--------------|
